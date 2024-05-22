@@ -113,7 +113,7 @@ const App = () => {
   return (
     <>
       {chatbotOpen && (
-        <div className="chatbot">
+        <div className="spcl chatbot ">
           <header>
             <h2>Krishi Bot</h2>
             <span
