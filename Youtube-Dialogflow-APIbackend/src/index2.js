@@ -97,9 +97,9 @@ async function detectIntent(languageCode, queryText, sessionId) {
   //here is the problem
   // console.log(response.queryResult.responseMessages[1].text.text);
   // return response.queryResult.responseMessages[0].text.text[0];
-  return response.queryResult.responseMessages[0].text.text[0];
+  return response.queryResult.responseMessages[0].text.text[0]; //here is the problem
 }
-
+//want the old text up
 // detectIntent("en", "hi  ", "abcd1234");
 
 const webApp = express();

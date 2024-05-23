@@ -39,7 +39,7 @@ const App = () => {
 
     try {
       const response = await fetch(
-        "https://dialogflow-dev.krishitantra.com/dialogflow",
+        "https://dialogflow-dev.krishitantra.com/backend/dialogflow",
         {
           method: "POST",
           headers: {
@@ -82,7 +82,8 @@ const App = () => {
     };
     try {
       const response = await fetch(
-        "https://dialogflow-dev.krishitantra.com/dialogflow",
+        // "http://localhost:5000/dialogflow",
+        "https://dialogflow-dev.krishitantra.com/backend/dialogflow",
         {
           method: "POST",
           headers: {
@@ -127,7 +128,10 @@ const App = () => {
             <ul>
               {messages.map((message, index) => (
                 <li key={index} className={`chat ${message.sender}`}>
-                  <span className="material-symbols-outlined">
+                  <span
+                    className="material-symbols-outlined"
+                    style={{ fontSize: "48px" }}
+                  >
                     {message.sender === "user" ? "face" : "smart_toy"}
                   </span>
                   {/* above is just the icon */}
